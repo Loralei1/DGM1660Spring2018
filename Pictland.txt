@@ -24,4 +24,5 @@ But I can still open this one.
 =======
 Pictish symbol stones are fairly odd. 
 And it turns out it is different. 
+Okay. So that's what happens when you upload two files with the same name. Good to know.
 >>>>>>> master
