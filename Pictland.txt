@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Pictish symbol stones are weird. 
 
 While unusual to us, their purpose must have been clear to the Pictish inhabitants of the Scottish lowlands who erected them, as the symbols were widely used and the stones were often erected along what may have been boundary lines even then; a number of stones were found along what are now parish boundaries, boundaries which were likely based on an older system of land ownership.
@@ -20,3 +21,7 @@ Granted, it wasn't the best model; I didn't really know how computer modeling wo
 
 But I can still open this one.  
 
+=======
+Pictish symbol stones are fairly odd. 
+And it turns out it is different. 
+>>>>>>> master
