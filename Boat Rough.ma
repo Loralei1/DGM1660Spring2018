@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: Boat Rough.ma
-//Last modified: Sat, Jan 20, 2018 04:38:38 PM
+//Last modified: Sat, Jan 20, 2018 04:42:07 PM
 //Codeset: 1252
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "6A3523D8-45EA-9795-93A2-5FB6C5CF119B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 17.311832584018912 5.1551541683515643 3.1259549451391209 ;
-	setAttr ".r" -type "double3" 731.66164726552677 426.19999999965489 0 ;
+	setAttr ".t" -type "double3" 6.6148401513267574 4.6654040598114284 8.3562955446658975 ;
+	setAttr ".r" -type "double3" 720.86164726544553 393.39999999960554 5.9527213381585896e-017 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A944962C-40C6-C871-43DD-439D47A7E106";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 18.587362247646197;
+	setAttr ".coi" 13.712384344197982;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
