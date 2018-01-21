@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: Boat Rough.ma
-//Last modified: Sun, Jan 21, 2018 10:12:45 AM
+//Last modified: Sun, Jan 21, 2018 10:15:43 AM
 //Codeset: 1252
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
@@ -1764,6 +1764,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape25" -p "transform51";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pCube27";
 	rename -uid "28F48637-472E-66CF-16EF-66A604A56EFC";
+	setAttr ".t" -type "double3" 0 -0.20872662239996043 0.16390584258350627 ;
 	setAttr ".rp" -type "double3" 0.24846863746643066 4.7168671190738678 -2.5304276236168457 ;
 	setAttr ".sp" -type "double3" 0.24846863746643066 4.7168671190738678 -2.5304276236168457 ;
 createNode mesh -n "pCube27Shape" -p "pCube27";
