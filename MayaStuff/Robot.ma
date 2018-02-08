@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: Robot.ma
-//Last modified: Wed, Feb 07, 2018 10:45:13 PM
+//Last modified: Wed, Feb 07, 2018 10:47:16 PM
 //Codeset: 1252
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
@@ -13,8 +13,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "592C7C10-4926-DE03-48B0-34BDCC28CC62";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 3.5114103288032839 0.83365816296566031 18.55107952133957 ;
-	setAttr ".r" -type "double3" 9.2616472755821313 3598.9999999992033 -8.6981539781102344e-017 ;
+	setAttr ".t" -type "double3" 14.021734583284232 6.7989909125528749 15.753679041657403 ;
+	setAttr ".r" -type "double3" -8.1383527244295291 3631.399999999901 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "0CE83584-4A44-821D-DF5D-6E82D6C62BD8";
 	setAttr -k off ".v" no;
