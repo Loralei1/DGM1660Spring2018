@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: SecondRobot.ma
-//Last modified: Sun, Feb 18, 2018 08:57:07 PM
+//Last modified: Sun, Feb 18, 2018 09:07:08 PM
 //Codeset: 1252
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "DC3FF6F5-4133-8D56-9723-4CBE7BB5AB6A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.6069540517453182 4.7005698519180612 5.6479583413968815 ;
-	setAttr ".r" -type "double3" -17.138352729633766 17.399999999995686 -4.1663438790215505e-016 ;
+	setAttr ".t" -type "double3" 0.39865843807606194 3.0433860132058936 4.2930690740259907 ;
+	setAttr ".r" -type "double3" -2.1383527297246254 7.3999999998829926 2.5056777278079334e-017 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "0A17FD5C-4690-EB65-8351-1696EBEAD6C4";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 6.1693598241116208;
+	setAttr ".coi" 4.3096240877555276;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -75,20 +75,6 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
-createNode transform -n "RobotTwo:persp2";
-	rename -uid "FFFE5FC6-4E32-D7CA-5C3A-5D806901CED5";
-	setAttr ".t" -type "double3" -0.30106361105505031 1.8113240831670971 5.6790073260987999 ;
-	setAttr ".r" -type "double3" 368.06164726723705 716.59999999904198 0 ;
-createNode camera -n "RobotTwo:persp2Shape" -p "RobotTwo:persp2";
-	rename -uid "B463F3C8-44EA-6B19-AB7D-BEA4A4732456";
-	setAttr -k off ".v";
-	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 5.1443466318744049;
-	setAttr ".imn" -type "string" "persp";
-	setAttr ".den" -type "string" "persp_depth";
-	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".hc" -type "string" "viewSet -p %camera";
-	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -n "RobotTwo:pCube2";
 	rename -uid "8022E855-4BCA-C52E-DE38-FF950B389188";
 	setAttr ".t" -type "double3" 0 2.3164655093858593 0.16774426237909701 ;
@@ -1330,46 +1316,6 @@ createNode mesh -n "RobotTwo:pCubeShape2" -p "RobotTwo:pCube2";
 		mu 0 4 283 188 500 499
 		f 4 -766 866 883 -882
 		mu 0 4 188 284 497 500;
-	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
-	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
-	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
-	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "RobotTwo:pCube3";
-	rename -uid "B0C355F8-40AB-8C76-2AC0-96A557766776";
-	setAttr ".t" -type "double3" -1.3808235644408584 2.9072088619633925 0.89296548902976092 ;
-	setAttr ".r" -type "double3" 0 6.969391175436173 0 ;
-	setAttr ".s" -type "double3" 0.22503319795249116 0.22503319795249116 0.70118148214702181 ;
-createNode mesh -n "RobotTwo:pCubeShape3" -p "RobotTwo:pCube3";
-	rename -uid "AB41997B-4194-B585-8A8E-B5A08E2DAE11";
-	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.375 0 0.625 0 0.375
-		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
-		 0.875 0.25 0.125 0 0.125 0.25;
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
-		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
-	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
-		 3 5 0 4 6 0 5 7 0 6 0 0 7 1 0;
-	setAttr -s 6 -ch 24 ".fc[0:5]" -type "polyFaces" 
-		f 4 0 5 -2 -5
-		mu 0 4 0 1 3 2
-		f 4 1 7 -3 -7
-		mu 0 4 2 3 5 4
-		f 4 2 9 -4 -9
-		mu 0 4 4 5 7 6
-		f 4 3 11 -1 -11
-		mu 0 4 6 7 9 8
-		f 4 -12 -10 -8 -6
-		mu 0 4 1 10 11 3
-		f 4 10 4 6 8
-		mu 0 4 12 0 2 13;
 	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
@@ -3090,6 +3036,29 @@ createNode mesh -n "RobotTwo:polySurfaceShape1" -p "RobotTwo:pCube5";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "RobotTwo:pCube6";
+	rename -uid "04DE792C-40F3-7B63-11D7-228435DAE5D2";
+	setAttr ".t" -type "double3" 0 2.6025357038274759 -0.63171560046770514 ;
+	setAttr ".s" -type "double3" 0.74064149367326548 0.83912171179445239 0.51408777445895637 ;
+createNode mesh -n "RobotTwo:pCubeShape3" -p "RobotTwo:pCube6";
+	rename -uid "8851EBDB-4F39-44E9-DC91-19B2AA0B0FE1";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 11 ".pt";
+	setAttr ".pt[9]" -type "float3" 0 -0.02790002 0 ;
+	setAttr ".pt[13]" -type "float3" 0 -0.02790002 0 ;
+	setAttr ".pt[16]" -type "float3" 0.020682529 0 0 ;
+	setAttr ".pt[23]" -type "float3" -0.020682529 0 0 ;
+	setAttr ".pt[24]" -type "float3" 0.013607854 0 0 ;
+	setAttr ".pt[31]" -type "float3" -0.013607854 0 0 ;
+	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "ACFC6FBF-40F9-E16C-69EF-83B04BBF8C9F";
 	setAttr -s 2 ".lnk";
@@ -3483,6 +3452,66 @@ createNode polySplit -n "RobotTwo:polySplit23";
 	setAttr -s 2 ".d[0:1]"  -2147482253 -2147482480;
 	setAttr ".sma" 180;
 	setAttr ".m2015" yes;
+createNode polyCube -n "RobotTwo:polyCube1";
+	rename -uid "551F0D5E-4213-F53B-AC07-3A97DCD4D86B";
+	setAttr ".cuv" 4;
+createNode polySplitRing -n "RobotTwo:polySplitRing5";
+	rename -uid "6EA4C027-4C83-EE7C-7648-319546B94AE9";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 1 "e[0:3]";
+	setAttr ".ix" -type "matrix" 0.74064149367326548 0 0 0 0 0.75964158795696979 0 0
+		 0 0 0.51408777445895637 0 0 2.539843829684493 -1.2449508290076179 1;
+	setAttr ".wt" 0.74994510412216187;
+	setAttr ".dr" no;
+	setAttr ".re" 2;
+	setAttr ".sma" 29.999999999999996;
+	setAttr ".stp" 2;
+	setAttr ".p[0]"  0 0 1;
+	setAttr ".uem" no;
+	setAttr ".fq" yes;
+createNode polyTweak -n "RobotTwo:polyTweak7";
+	rename -uid "B8FA2AF9-4EC1-FE70-0E1A-FDBD25F9C7F7";
+	setAttr ".uopa" yes;
+	setAttr -s 6 ".tk[2:7]" -type "float3"  0.25006169 0 -0.13228081 -0.25006169
+		 0 -0.13228081 0.25006169 -0.62921083 -0.067442752 -0.25006169 -0.62921083 -0.067442752
+		 0 0 0.26174897 0 0 0.26174897;
+createNode polySplitRing -n "RobotTwo:polySplitRing6";
+	rename -uid "0D005E73-43B7-A9DC-8E67-B8BFCB60622C";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 6 "e[4:5]" "e[8:9]" "e[14]" "e[18]" "e[22]" "e[26]";
+	setAttr ".ix" -type "matrix" 0.74064149367326548 0 0 0 0 0.83912171179445239 0 0
+		 0 0 0.51408777445895637 0 0 2.6025357038274759 -0.63171560046770514 1;
+	setAttr ".wt" 0.33812862634658813;
+	setAttr ".re" 22;
+	setAttr ".sma" 29.999999999999996;
+	setAttr ".p[0]"  0 0 1;
+	setAttr ".uem" no;
+	setAttr ".fq" yes;
+createNode polyTweak -n "RobotTwo:polyTweak8";
+	rename -uid "BB0F9A41-463E-6A68-E48B-BBAB29DBB5CA";
+	setAttr ".uopa" yes;
+	setAttr -s 9 ".tk";
+	setAttr ".tk[2]" -type "float3" 0 -0.083655238 0 ;
+	setAttr ".tk[3]" -type "float3" 0 -0.083655238 0 ;
+	setAttr ".tk[4]" -type "float3" 0 -0.083655238 0.070594721 ;
+	setAttr ".tk[5]" -type "float3" 0 -0.083655238 0.070594721 ;
+	setAttr ".tk[6]" -type "float3" 0 0 0.13787402 ;
+	setAttr ".tk[7]" -type "float3" 0 0 0.13787402 ;
+	setAttr ".tk[9]" -type "float3" 0 0 0.13787402 ;
+	setAttr ".tk[13]" -type "float3" 0 0 0.13787402 ;
+createNode polySplitRing -n "RobotTwo:polySplitRing7";
+	rename -uid "478AC6C1-4899-13A8-6E1F-578E4E645E25";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 6 "e[4:5]" "e[18]" "e[26]" "e[28:29]" "e[39]" "e[41]";
+	setAttr ".ix" -type "matrix" 0.74064149367326548 0 0 0 0 0.83912171179445239 0 0
+		 0 0 0.51408777445895637 0 0 2.6025357038274759 -0.63171560046770514 1;
+	setAttr ".wt" 0.65154731273651123;
+	setAttr ".dr" no;
+	setAttr ".re" 28;
+	setAttr ".sma" 29.999999999999996;
+	setAttr ".p[0]"  0 0 1;
+	setAttr ".uem" no;
+	setAttr ".fq" yes;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -3516,6 +3545,7 @@ select -ne :hardwareRenderGlobals;
 select -ne :ikSystem;
 	setAttr -s 4 ".sol";
 connectAttr "RobotTwo:polySplit23.out" "RobotTwo:pCube5Shape.i";
+connectAttr "RobotTwo:polySplitRing7.out" "RobotTwo:pCubeShape3.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
@@ -3567,9 +3597,17 @@ connectAttr "RobotTwo:polySplit21.out" "RobotTwo:polyExtrudeFace3.ip";
 connectAttr "RobotTwo:pCube5Shape.wm" "RobotTwo:polyExtrudeFace3.mp";
 connectAttr "RobotTwo:polyExtrudeFace3.out" "RobotTwo:polySplit22.ip";
 connectAttr "RobotTwo:polySplit22.out" "RobotTwo:polySplit23.ip";
+connectAttr "RobotTwo:polyTweak7.out" "RobotTwo:polySplitRing5.ip";
+connectAttr "RobotTwo:pCubeShape3.wm" "RobotTwo:polySplitRing5.mp";
+connectAttr "RobotTwo:polyCube1.out" "RobotTwo:polyTweak7.ip";
+connectAttr "RobotTwo:polyTweak8.out" "RobotTwo:polySplitRing6.ip";
+connectAttr "RobotTwo:pCubeShape3.wm" "RobotTwo:polySplitRing6.mp";
+connectAttr "RobotTwo:polySplitRing5.out" "RobotTwo:polyTweak8.ip";
+connectAttr "RobotTwo:polySplitRing6.out" "RobotTwo:polySplitRing7.ip";
+connectAttr "RobotTwo:pCubeShape3.wm" "RobotTwo:polySplitRing7.mp";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "RobotTwo:defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "RobotTwo:pCubeShape2.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "RobotTwo:pCubeShape3.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "RobotTwo:pCube5Shape.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "RobotTwo:pCubeShape3.iog" ":initialShadingGroup.dsm" -na;
 // End of SecondRobot.ma
