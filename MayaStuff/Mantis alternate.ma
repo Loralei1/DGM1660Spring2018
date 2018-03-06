@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: Mantis alternate.ma
-//Last modified: Tue, Mar 06, 2018 01:10:28 PM
+//Last modified: Tue, Mar 06, 2018 01:11:41 PM
 //Codeset: 1252
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
@@ -13,8 +13,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "B35B7AC5-472D-1953-E6D1-3EA514DFDCF3";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 7.4460966764742462 4.565642640809692 11.543046565417768 ;
-	setAttr ".r" -type "double3" 341.06164729989734 1478.599999998359 1.0174252606419019e-015 ;
+	setAttr ".t" -type "double3" 13.602023474733707 0.9275201196660432 3.8085956179387477 ;
+	setAttr ".r" -type "double3" 353.66164729988077 1513.3999999983187 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "24DE203A-47FE-1B8B-F979-C29459D1912C";
 	setAttr -k off ".v" no;
