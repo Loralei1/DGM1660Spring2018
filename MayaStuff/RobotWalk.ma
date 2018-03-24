@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: RobotWalk.ma
-//Last modified: Fri, Mar 23, 2018 06:28:17 PM
+//Last modified: Fri, Mar 23, 2018 06:33:01 PM
 //Codeset: 1252
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "DC3FF6F5-4133-8D56-9723-4CBE7BB5AB6A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 12.995740051820253 1.1869737003508343 3.3047870856507959 ;
-	setAttr ".r" -type "double3" 2.6616472910044444 2951.7999999998706 1.2728942926842332e-015 ;
+	setAttr ".t" -type "double3" 9.0529053896011664 3.9828627836084789 14.701003906746362 ;
+	setAttr ".r" -type "double3" -4.5383527089977767 2910.9999999998245 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "0A17FD5C-4690-EB65-8351-1696EBEAD6C4";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 14.140120342150198;
+	setAttr ".coi" 17.469734310222666;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -36879,7 +36879,7 @@ createNode animCurveTA -n "Left_Hand_rotateX";
 	rename -uid "EAD469BF-4AF1-FBF8-3A47-238A1A8F64DB";
 	setAttr ".tan" 18;
 	setAttr -s 5 ".ktv[0:4]"  1 29.433 5 27.85388116461689 24 -29.433
-		 28 -36.155 46 -29.433;
+		 28 -36.155 46 29.433;
 createNode animCurveTA -n "Left_Hand_rotateY";
 	rename -uid "2939FC07-4811-B594-5BB6-0384BCFE486C";
 	setAttr ".tan" 18;
@@ -36969,8 +36969,8 @@ createNode animCurveTU -n "pCube2_visibility";
 	setAttr -s 2 ".ktv[0:1]"  1 1 30 1;
 	setAttr -s 2 ".kot[0:1]"  5 5;
 select -ne :time1;
-	setAttr ".o" 24;
-	setAttr ".unw" 24;
+	setAttr ".o" 7;
+	setAttr ".unw" 7;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
