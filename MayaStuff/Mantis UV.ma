@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: Mantis UV.ma
-//Last modified: Sun, Mar 25, 2018 07:17:39 PM
+//Last modified: Sun, Mar 25, 2018 07:18:33 PM
 //Codeset: 1252
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
