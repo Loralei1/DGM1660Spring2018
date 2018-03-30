@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
 //Name: Freight Depo.ma
-//Last modified: Fri, Mar 30, 2018 12:20:49 PM
+//Last modified: Fri, Mar 30, 2018 12:21:59 PM
 //Codeset: 1252
 requires maya "2017ff05";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "ECA6AC90-49F0-57BB-AD80-D68112841257";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 15.606640031501568 22.663237906671149 36.980656988328434 ;
-	setAttr ".r" -type "double3" -17.738352729734807 35.800000000020937 -9.8036511030280908e-016 ;
+	setAttr ".t" -type "double3" 27.469881532664463 13.653848663418366 51.380418108943985 ;
+	setAttr ".r" -type "double3" -3.3383527297348357 37.000000000021295 -2.4890537058608118e-016 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "17C30D9C-40CE-D0FF-9928-4D8D62E49BB9";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 40.528534032310851;
+	setAttr ".coi" 57.330173846240569;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
