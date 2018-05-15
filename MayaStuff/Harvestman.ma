@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: Harvestman.ma
-//Last modified: Tue, May 15, 2018 11:55:33 AM
+//Last modified: Tue, May 15, 2018 11:57:18 AM
 //Codeset: 1252
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "13B46B5C-4A0A-93DF-68C5-13BE193E917F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 32.021599435859386 9.8510679034849975 19.874317885125404 ;
+	setAttr ".t" -type "double3" 32.021599435855897 9.8510679034839441 19.874317885122423 ;
 	setAttr ".r" -type "double3" -12.938352729495577 49.400000000000283 1.2218349302567061e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "9076AFFA-4259-D077-5E6D-E4B2895B3734";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 37.815705699206646;
+	setAttr ".coi" 37.815705699201942;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
