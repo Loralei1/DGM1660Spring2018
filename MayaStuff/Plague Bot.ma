@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: Plague Bot.ma
-//Last modified: Tue, Jul 10, 2018 05:18:37 PM
+//Last modified: Tue, Jul 10, 2018 05:21:27 PM
 //Codeset: 1252
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "F1DDB958-439C-B847-F241-ECBE9D596C40";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 3.6965022389272244 5.4744260711853716 6.3677778222000763 ;
-	setAttr ".r" -type "double3" -15.938352743086 390.59999999999303 0 ;
+	setAttr ".t" -type "double3" 2.5799926941590305 4.7230518298207498 4.2389266908998726 ;
+	setAttr ".r" -type "double3" -15.338352743086231 391.79999999996352 9.3557536960475481e-016 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "7A78F85D-4E8B-2BF0-9638-C39E48EF1E76";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 8.5858952546223364;
+	setAttr ".coi" 6.0726824325341235;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
